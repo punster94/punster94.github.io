@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Markdown flavour"
-date:   2016-09-19 00:00:00 +0200
-tags: ['example', 'welcome']
-author: "Your Name"
+title:  "Creating Kirby Kickout"
+date:   2017-02-19 00:00:00 +0200
+tags: ['c/c++']
+author: "Louis Hofer"
 ---
 
 I have some text.
