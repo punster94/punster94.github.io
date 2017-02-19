@@ -31,7 +31,7 @@ layout: base
         <ul class="slides">
             {% for post in posts %}
             <li>
-                <a href="{{ post.url | prepend : site.baseurl }}"></a>
+                <a href="{{ post.url | prepend : site.baseurl }}">{% img post.thumbnail %}</a>
                 <div class="caption center-align">
                     <h3>{{ post.title }}</h3>
                 </div>
@@ -47,6 +47,7 @@ layout: base
         <div class="card medium sticky-action hoverable">
             {% if post.thumbnail %}
             <div class="card-image">
+				{% img post.thumbnail %}
             </div>
             {% endif %}
             <div class="card-content">
