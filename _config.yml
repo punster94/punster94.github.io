@@ -1,44 +1,63 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title: "Your Name"
+description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+about: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+location: "Your Region, Country"
+email: your-email@example.com
+baseurl: "/material-theme"
 
-# Site settings
-title: "I'm Vyaasa"
-title-font-size: '4em' # a provision to adjust the size of your title. If it is too long then do resize to a smaller value. By default it will be 4em.
+url: "http://himsel.me" # replace by your site's url
+twitter_username: your-name
+github_username:  lukas-h
+author: "Your Name"
 
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Vyaasa is a minimal Jekyll theme meant for writers. Long text posts will look good with this layout. This is a free theme and can be used for all kinds of Jekyll blogs.
-baseurl: "/vyaasa" # the subpath of your site, e.g. /blog
-url: "http://webjeda.com" # the base hostname & protocol for your site
+# google analytics tracking code, please change the value
+g_analytics: ""
 
-permalink: :title/
+# add your disqus to enable comments
+disqus_shortname:
 
-# Build settings
+# add your disqus to enable comments
+disqus_shortname:
+
+# language settings
+isolang: en
+close_btn: "Close"
+home_btn: "Home"
+projects_btn: "Projects"
+posts_btn: "Posts"
+imprint_btn: "Imprint"
+name_badge: "an article by"
+rss_badge: "Subscribe feed!"
+
+# build settings
 markdown: kramdown
-highlight: rouge
-paginate: 5
-paginate_path: /page:num/
+highlighter: rouge
 
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    tab_width: 4
 
-# Tracker
-analytics: UA-83979019-1
+# third party gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
 
-# Comments
-disqus-shortname: webjeda-demo
+whitelist:
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
 
-# Contact form
-# Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
-api-token:   
-
-#CSS
-sass:
-  style: compressed
-
-
-include: [_pages]
-
-gems: [jekyll-paginate, jekyll-seo-tag]
+# exclude files
+exclude:
+  - LICENSE
+  - README.md
