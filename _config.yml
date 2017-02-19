@@ -1,49 +1,44 @@
-# Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
-baseurl: "/space-jekyll-template" # for test: remove string '/space-jekyll-templa' to ''
-url: "http://victorvoid.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
-# User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-disqus_username: loremipsum
+title: Your awesome title
+email: your-email@domain.com
+description: description
+baseurl: /Jekyll-Avalon
+url: http://joshuaavalon.github.io
+twitter_username: joshuaavalon
+github_username:  joshuaavalon
+
+sass:
+  style: compressed
+
+paginate: 12
+paginate_path: "/:num/"
+
+author_img_s: /img/author_s.png
+author_img: /img/author.png
+
+navigation:
+  - text: Home
+    url: /
+  - text: Categories
+    url: /categories.html
+  - text: Tags
+    url: /tags.html
+
+read_more: Read More
+env: production
+minify_html: false # Set to true only when it is production. Increase significant build time.
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: /:title/
 
+sticky: sticky # Tag used for sticky post
+sticky_count: 3 # Number of sticky post shown
 
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
-
-# Links to include in menu navigation
-links:
-  - title: home
-    url: /
-  - title: my posts
-    url: /posts
-  - title: series
-    url: /series
-  - title: tags
-    url: /tags
-  - title: about me
-    url: /about
-# projects in header index
-projects:
-  - name: asciilang
-    url: https://github.com/victorvoid/asciilang
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
-# exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE

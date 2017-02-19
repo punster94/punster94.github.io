@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    {% include head.html %}
-    <body>
-        {% include svg-icons.html %}
-        {% include header-post.html %}
-        {% include tree-posts.html %}
-        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
-            {% if page.date %}
-                <div class="time">
-                    <time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
-                </div>
-            {% endif %}
-            <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
-
-            <article role="article" id="scroll" class="post-content" itemprop="articleBody">
-                {{ content }}
-            </article>
-
-            {% include share.html %}
-            {% include comments.html %}
-            {% include footer.html %}
-            {% include scripts.html %}
-        </section>
-    </body>
-</html>
+---
+layout: base
+---
+{% if page.cover %}
+<div class="row">
+{% img page.cover cover %}
+</div>
+{% endif %}
+<div class="row">
+<h2>{{ page.title }}</h2>
+<div class="valign-wrapper">
+<div class="author"><img src="{{ site.author_img | prepend: site.baseurl }}" class="circle responsive-img"></div> {% for category in page.categories %}<h5><a href="{{ category | prepend: '/categories/' | prepend: site.baseurl }}">{{ category }}</a>{% unless forloop.last%}, {% endunless %}{% endfor%} - {{ page.date | date: "%m/%d/%Y" }}</h5>
+</div>
+    {% for tag in page.tags %}
+    {% if tag != site.sticky %}
+    <a href="{{ tag | prepend: '/tags/' | prepend: site.baseurl }}"><div class="chip waves-effect waves-red">{{ tag }}</div></a>
+    {% endif %}
+    {% endfor %}
+</div>
+<div class="row">
+{{ content }}
+</div>
