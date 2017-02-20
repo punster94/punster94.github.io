@@ -13,7 +13,7 @@
 - name: Hues Of Hope
   link: "https://github.com/punster94/HuesOfHope"
   description: "A Unity game prototype where you play as a new college student suffering from depression."
-  - name: Fog Of War
+- name: Fog Of War
   link: "https://github.com/punster94/FogOfWar"
   description: "Flash game where you compete against another local player to extract or destroy units on a grid."
 - name: Smart Pop
