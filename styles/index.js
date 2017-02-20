@@ -3,6 +3,7 @@ var hide_lists = function(cb) {
     $('#projects').fadeOut(300);
     $('#posts-btn').removeClass('disabled');
     $('#projects-btn').removeClass('disabled');
+    $('#title-image').removeClass('disabled')
 };
 var show_projects = function() {
     $('#posts-btn').removeClass('disabled');
