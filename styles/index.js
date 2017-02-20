@@ -1,9 +1,9 @@
 var hide_lists = function(cb) {
     $('#posts').fadeOut(300);
     $('#projects').fadeOut(300);
+    $('#title-image').fadeIn(300);
     $('#posts-btn').removeClass('disabled');
     $('#projects-btn').removeClass('disabled');
-    $('#title-image').removeClass('disabled')
 };
 var show_projects = function() {
     $('#posts-btn').removeClass('disabled');
@@ -11,7 +11,7 @@ var show_projects = function() {
         $('#projects').fadeIn(300)
     });
     $('#projects-btn').addClass('disabled');
-	$('#title-image').addClass('disabled')
+    $('#title-image').fadeOut(300);
 };
 var show_posts = function() {
     $('#projects-btn').removeClass('disabled');
@@ -19,5 +19,5 @@ var show_posts = function() {
         $('#posts').fadeIn(300)
     });
     $('#posts-btn').addClass('disabled');
-    $('#title-image').addClass('disabled')
+    $('#title-image').fadeOut(300);
 };
