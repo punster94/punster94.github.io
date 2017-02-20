@@ -8,16 +8,16 @@ var hide_lists = function(cb) {
 var show_projects = function() {
     $('#posts-btn').removeClass('disabled');
     $('#posts').fadeOut(300, function() {
-        $('#projects').fadeIn(300)
+    	$('#projects').fadeIn(300);
+    	$('#title-image').fadeOut(300);
     });
     $('#projects-btn').addClass('disabled');
-    $('#title-image').fadeOut(300);
 };
 var show_posts = function() {
     $('#projects-btn').removeClass('disabled');
     $('#projects').fadeOut(function() {
-        $('#posts').fadeIn(300)
+    	$('#posts').fadeIn(300);
+    	$('#title-image').fadeOut(300);
     });
     $('#posts-btn').addClass('disabled');
-    $('#title-image').fadeOut(300);
 };
