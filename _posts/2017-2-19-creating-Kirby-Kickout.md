@@ -1,29 +1,19 @@
 ---
 layout: post
 title:  "Creating Kirby Kickout"
-date:   2017-02-19 00:00:00 +0200
+date:   2016-12-12 00:00:00 +0200
 tags: ['c/c++']
 author: "Louis Hofer"
 ---
 
-I have some text.
+I completed my first  C-based game using an skeleton engine provided to me.
+This exposed me to several patterns and practices that I was unfamiliar with:
+* Singleton classes
+* Spritesheet tables
+* Usage of XInput
+* Limitations of basic sound mixing
 
-I want some _italics_.
+Coming from a background of highly object-oriented design, some of these I never had to get down and roll for myself.
+I feel like this experience has improved my perception of how certain things are done in larger scale games, like 2D-animation and the chain of command.
 
-I want some **bold**.
-
-# this is heading 1
-
-## this is heading 2
-
-### this is heading 3
-
-you want a list?
-* first
-* second
-* third
-
-you want an ordered list?
-1. whatever
-1. whatever
-1. whatever
+The source for this project is available in the Projects tab or on my Github account page.
