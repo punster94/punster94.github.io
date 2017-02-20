@@ -7,6 +7,8 @@ baseurl: ""
 
 url: "http://louishofer.com" # replace by your site's url
 github_username:  punster94
+linkedin_username: louis-hofer
+linkedin_url: "https://www.linkedin.com/in/louis-hofer-87592a137/"
 author: "Louis Hofer"
 
 # google analytics tracking code, please change the value

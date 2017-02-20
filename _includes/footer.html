@@ -10,6 +10,9 @@
         {% if site.twitter_username %}
         <a href="https://twitter.com/{{ site.twitter_username }}" class="waves-effect waves-teal btn-flat my-twitter-link"><i class="fa fa-twitter"></i></a>
         {% endif %}
+		{% if site.linkedin_username %}
+		<a href="{{ site.linkedin_url }}" class="waves-effect waves-teal btn-flat my-twitter-link"><i class="fa fa-linkedin"></i></a>
+		{% endif %}
     </p>
 </footer>
 <script type="text/javascript" src="{{ "/styles/jquery.js" | prepend: site.baseurl }}"></script>
