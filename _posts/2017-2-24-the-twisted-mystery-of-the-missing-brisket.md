@@ -21,8 +21,3 @@ Of course until you play through the whole game you cannot be sure of your choic
 
 Additionally, we developed a menu where you can see a log of statements spoken by each character.
 You are also provided an association map so that you may draw blame lines from facts revealed by one character to the character it affects.
-
-Below is a video of the final game.
-You can also find the code and assets we used in the game by following the link in the projects tab or clicking <a href="https://github.com/punster94/TheTwistedMysteryOfTheMissingBrisket">here</a>.
-
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/e5VH0N9M0oc?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
