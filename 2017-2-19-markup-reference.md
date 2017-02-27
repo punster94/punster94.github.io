@@ -27,3 +27,6 @@ you want an ordered list?
 1. whatever
 1. whatever
 1. whatever
+
+Images:
+![image alt text](images/LouisTitle.png)
