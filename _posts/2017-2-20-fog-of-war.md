@@ -30,4 +30,4 @@ While XML is easier to read and write in than a piece of code, it is still quite
 In OZ, an Unreal game, I took the approach of using the capabilites of USTRUCTs to create a dialog system that was easily modified in a blueprint.
 This allows the designers to more clearly edit without fear of syntactical failure.
 
-![image alt text](images/LouisTitle.png)
+![Fog of War Screenshot](http://louishofer.com/images/LouisTitle.png)
