@@ -23,7 +23,7 @@ Your objective is to improve your mood enough to answer the call and allow peopl
 
 The game is not a means to cure clinical depression, nor a means to teach how to support someone with clinical depression.
 
-Below is a video of a playthrough of the final game.
+Below is a video of a our game trailer.
 You can also find the code and assets we used in the game by following the link in the projects tab or clicking <a href="https://github.com/punster94/HuesOfHope">here</a>.
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/e5VH0N9M0oc?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
