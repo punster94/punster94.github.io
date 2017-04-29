@@ -1,3 +1,6 @@
+- name: Personal Game Engine
+  link: "https://github.com/punster94/GameEngine"
+  description: "A game engine framework that makes use of type-agnostic data structures for parsing game entities and actions specified in XML."
 - name: Kirby Kickout
   link: "https://github.com/punster94/KirbyKickout"
   description: "A Super Smash Bros inspired C game where up to four players duke it out as Kirby."
