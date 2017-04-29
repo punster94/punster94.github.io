@@ -32,6 +32,7 @@ What was essentially created is a scripting language that can be evaluated based
 I even created an expression system that uses a shunting yard algorithm to evaluate basic arithmetic and logic functions of name lookups to these type agnostic data structures.
 The result is XML that looks like this:
 
+```xml
 <world name='World 1'>
 	<float name='number' value='5.0'/>
 	<float name='otherNumber' value='3.0'/>
@@ -51,6 +52,7 @@ The result is XML that looks like this:
 		</else>
 	</if>
 </world>
+```
 
 When the update method of that World instance is invoked, the then block of the if runs, creating a new Action named "Created Action".
 If the value of otherNumber is set to 6.0, for instance, then the next update of the World will invoke the else block of the if, destroying its sibling Action named "Created Action".
