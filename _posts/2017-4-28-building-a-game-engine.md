@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building A Game Engine"
-date:   2017-28-4 00:00:00 +0200
+date:   2017-4-28 00:00:00 +0200
 tags: ['c/c++', 'XML']
 author: "Louis Hofer"
 ---
