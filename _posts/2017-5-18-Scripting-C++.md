@@ -54,6 +54,21 @@ int main()
 }
 ```
 
+Where the bindtesting.lua file has the following contents:
+```lua
+	function LuaFunction ()
+		print ("This Lua function was invoked from C++")
+		print ("The value from C++ is: "..entity.x)
+	end
+
+	function Sum (a, b)
+		local c = a + b
+		print ("Adding the values "..a.." and "..b.." from C++ in Lua: "..c)
+		print ("Returning the value to C++")
+		return c
+	end
+```
+
 Outputs the following:
 ```
 	This Lua function was invoked from C++
@@ -62,5 +77,5 @@ Outputs the following:
 	Adding the values 1 and 4 from C++ in Lua: 5
 	Returning the value to C++
 	5
-Press any key to continue . . .
+	Press any key to continue . . .
 ```
