@@ -1,3 +1,6 @@
+- name: Super Kappa Kat Ball Party 2 Deluxe 3D
+  link: https://github.com/punster94/SuperKappaKatBallParty2Deluxe3D
+  description: "A game built using a personal game engine intended to be a clone of a Super Monkey Ball minigame."
 - name: Personal Game Engine
   link: "https://github.com/punster94/GameEngine"
   description: "A game engine framework that makes use of type-agnostic data structures for parsing game entities and actions specified in XML."
