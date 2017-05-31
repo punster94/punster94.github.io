@@ -20,9 +20,111 @@ I've also set up collision on entities like the ball and walls.
 Each entity also exists as an AChildActorComponent of what it physically belongs in so that I can easily change the components of one blueprint to affect all entities that contain that blueprint.
 
 Here's what the current field looks like:
-![field and components](images/field%20and%20components.PNG "Field and Components")
+![field and components](http://louishofer.com/images/field%20and%20components.PNG "Field and Components")
 
-Example of :
+Here is an example class that represents the hierarchical structure I was going for:
 ```c
+#include "SoccerBall.h"
+#include "Goal.h"
+#include "SoccerTeam.h"
+#include "GameFramework/Actor.h"
+#include "SoccerField.generated.h"
 
+UCLASS()
+class SOCCERSIMULATOR_API ASoccerField : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+
+	ASoccerField();
+
+protected:
+
+	virtual void BeginPlay() override;
+
+public:	
+
+	virtual void Tick(float DeltaTime) override;
+
+	bool GameOn();
+
+	bool GoalKeeperHasBall();
+
+protected:
+
+	UPROPERTY(VisibleAnywhere)
+	USceneComponent* DefaultComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	UChildActorComponent* SoccerBallComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	UChildActorComponent* BlueGoalComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	UChildActorComponent* RedGoalComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	UChildActorComponent* BlueTeamComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	UChildActorComponent* RedTeamComponent;
+
+private:
+
+	bool bGameOn;
+	bool bGoalKeeperHasBall;
+
+	ASoccerBall* SoccerBall;
+
+	AGoal* BlueGoal;
+	AGoal* RedGoal;
+
+	ASoccerTeam* BlueTeam;
+	ASoccerTeam* RedTeam;
+};
+```
+
+I'm now in a good place to start splitting up the field and implementing some basic steering behaviors! (Probably like these):
+```c
+class SOCCERSIMULATOR_API SteeringBehavior
+{
+
+public:
+
+	SteeringBehavior();
+
+	~SteeringBehavior();
+
+	FVector Calculate();
+
+	void ArriveOn();
+	
+	void ArriveOff();
+
+	void SeekOn();
+
+	void SeekOff();
+
+	void SeparationOn();
+
+	void SeparationOff();
+
+	void InterPoseOn();
+
+	void InterPoseOff();
+
+	void PursuitOn();
+
+	void PursuitOff();
+
+private:
+
+	class ASoccerBall* SoccerBall;
+
+	class ASoccerField* SoccerField;
+
+	class APlayerBase* PlayerBase;
+};
 ```
