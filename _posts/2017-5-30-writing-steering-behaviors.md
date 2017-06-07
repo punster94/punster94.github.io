@@ -140,7 +140,7 @@ The separation behavior attempts to move the player away from a list of neighbor
 If they are close enough, the player will factor them into the best direction to move to avoid objects.
 The player will move at its maximum speed towards the best direction:
 
-![separation](http://louishofer.com/gifs/Separation.gif "Separation")
+![separate](http://louishofer.com/gifs/Separate.gif "Separate")
 
 ```c
 FVector SteeringBehavior::Separation(TArray<UPrimitiveComponent*> Neighbors)
