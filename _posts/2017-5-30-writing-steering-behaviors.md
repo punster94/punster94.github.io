@@ -15,7 +15,7 @@ Below is the list along with descriptions, visualizations, and the code I used t
 1 Seek
 The seek steering behavior provides a point for the player to move towards at its maximum possible speed:
 
-![seek](http://louishofer.com/gifs/Seek.gif "Seek")
+![seek](http://louishofer.com/gifs/Seek2.gif "Seek")
 
 ```c
 FVector SteeringBehavior::Seek(FVector Target)
@@ -40,7 +40,7 @@ As you could see above, the seek behavior can be jittery when the player actuall
 The arrive steering behavior makes the player move to a target position with deceleration to ease into the desired spot.
 In the following visualization, the red players are using a normal deceleration while two blue players are fast and two are slow:
 
-![arrive](http://louishofer.com/gifs/Arrive.gif "Arrive")
+![arrive](http://louishofer.com/gifs/Arrive2.gif "Arrive")
 
 ```c
 const float SteeringBehavior::DecelerationTweaker = 0.3f;
@@ -79,7 +79,7 @@ This is done more thoughtfully, however, by predicting where the object will be 
 Some people like to seek to their predicted location, but for this visualization I arrive there.
 Each player follows a different player on its team, while the lead players follow the ball which I kick around with debug keys.
 
-![pursuit](http://louishofer.com/gifs/Pursuit.gif "Pursuit")
+![pursuit](http://louishofer.com/gifs/Pursuit2.gif "Pursuit")
 
 ```c
 FVector SteeringBehavior::Pursue(UPrimitiveComponent* Object)
@@ -116,7 +116,7 @@ This involves moving towards the expected midpoint of two objects.
 This can be used to attempt intercepting the ball from the receiving player by getting between them.
 In this visualization each player interposes themself between their teammate and the ball:
 
-![interpose](http://louishofer.com/gifs/Interpose.gif "Interpose")
+![interpose](http://louishofer.com/gifs/Interpose2.gif "Interpose")
 
 ```c
 FVector SteeringBehavior::Interpose(UPrimitiveComponent* ObjectA, UPrimitiveComponent* ObjectB)
@@ -140,7 +140,7 @@ The separation behavior attempts to move the player away from a list of neighbor
 If they are close enough, the player will factor them into the best direction to move to avoid objects.
 The player will move at its maximum speed towards the best direction:
 
-![separate](http://louishofer.com/gifs/Separate.gif "Separate")
+![separate](http://louishofer.com/gifs/Separate2.gif "Separate")
 
 ```c
 FVector SteeringBehavior::Separation(TArray<UPrimitiveComponent*> Neighbors)
