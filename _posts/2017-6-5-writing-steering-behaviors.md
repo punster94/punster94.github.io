@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writing Steering Behaviors"
-date:   2017-5-30 00:00:00 +0200
+date:   2017-6-5 00:00:00 +0200
 tags: ['c/c++', 'Unreal', 'UE4']
 author: "Louis Hofer"
 ---
