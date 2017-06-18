@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Support Spot Calculation"
+title:  "Team and Field Player State Machines"
 date:   2017-6-12 00:00:00 +0200
 tags: ['c/c++', 'Unreal', 'UE4']
 author: "Louis Hofer"
