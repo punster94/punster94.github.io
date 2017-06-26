@@ -207,6 +207,7 @@ This last bit being executed implies that the player should not shoot or pass th
 The player can dribble the ball, which involves either changing their direction to be more oriented to the opponent's goal or moving the ball forward faster than the player can move with it in their vicinity.
 
 Here is a gif of the two teams scoring and passing along the way (both requiring this KickBall method)
+
 ![PassingAndScoring](http://louishofer.com/gifs/PassingAndScoring.gif "PassingAndScoring")
 
 The next step involves getting those static goalies to do something about their opponents shots!
