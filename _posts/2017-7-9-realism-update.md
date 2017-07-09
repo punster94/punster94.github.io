@@ -9,16 +9,16 @@ author: "Louis Hofer"
 Rather than making an aggressive state for field players, I thought it more interesting to bring the simulation closer to a real soccer match.
 The first thing that you will notice is the size of the teams:
 
-![Large Teams](http://louishofer.com/images/large%20teams.png"Large Teams")
+![Large Teams](http://louishofer.com/images/large%20teams.png "Large Teams")
 
 Each team contains 11 players: 10 field players and one goal keeper.
 Their placements are akin to the configuration of a real soccer team and as such each player has one of the following roles:
 
-1 sweeper
-1 centerback
-1 wingback
-1 midfield
-1 forward
+* sweeper
+* centerback
+* wingback
+* midfield
+* forward
 
 In addition to creating defined roles on the team for each player, I've added a system that degrades a player's stamina as they play.
 Players have separate speeds, stamina costs, stamina regeneration rates, and stamina thresholds that determine what speed to move at.
