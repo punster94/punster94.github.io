@@ -122,9 +122,10 @@ When the team is in the attack state they advance whereas in defense they fall b
 To prevent the teams from moving through their own goal, or the goal of the other team, the offset from the simulation's initial position is clamped between 0 and a configurable maximum distance.
 
 Here are two gifs of the team forming up at start.
-The first has three sweepers, four midfielders, and three forwards.
-The second has three sweepers, five midfielders, and two forwards.
+The first has three sweepers, four midfielders, and three forwards:
 
 ![ThreeFourThree](http://louishofer.com/gifs/ThreeFourThree.gif "threefourthree")
+
+The second has three sweepers, five midfielders, and two forwards:
 
 ![ThreeFiveTwo](http://louishofer.com/gifs/ThreeFiveTwo.gif "threefivetwo")
