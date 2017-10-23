@@ -1,3 +1,6 @@
+- name: GOAL AI Soccer Simulator
+  link: https://github.com/punster94/SoccerSimulator
+  description: "A simulated AI soccer match made in UE4."
 - name: Super Kappa Kat Ball Party 2 Deluxe 3D
   link: https://github.com/punster94/SuperKappaKatBallParty2Deluxe3D
   description: "A game built using a personal game engine intended to be a clone of a Super Monkey Ball minigame."
